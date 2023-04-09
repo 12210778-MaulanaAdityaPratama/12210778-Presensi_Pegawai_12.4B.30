@@ -6,7 +6,8 @@
 # 12210780_Chrissandra_Petrisia
 
 
-
+# LRS
+![353205d6-bbb5-4f08-aad6-775ae26fb56f](https://user-images.githubusercontent.com/113579366/230777218-c6b4c6cc-db17-42aa-9c70-237f4c14d712.jpg)
 # Design Aplikasi
 # Login Gagal
 ![Presensi Pegawai (1)_page-0001](https://user-images.githubusercontent.com/113579366/230775971-a61014bd-0b6f-4ffd-b81d-9b5fc80ab3fe.jpg)
