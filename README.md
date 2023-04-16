@@ -7,7 +7,9 @@
 
 
 # LRS
-![LRS Presensi Pegawai](https://user-images.githubusercontent.com/113674323/230834443-e07fd563-479c-4071-a354-14625336fea5.jpg)
+![IMG-20230416-WA0030](https://user-images.githubusercontent.com/113579366/232322756-0bc6b1ec-f15e-4834-81c4-bb98b08f6969.jpg)
+
+
 # Design Aplikasi
 # Login Gagal
 ![Presensi Pegawai (1)_page-0001](https://user-images.githubusercontent.com/113579366/230775971-a61014bd-0b6f-4ffd-b81d-9b5fc80ab3fe.jpg)
