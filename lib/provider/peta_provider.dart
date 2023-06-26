@@ -5,8 +5,8 @@ import 'package:latlong2/latlong.dart';
 
 class PetaProvider with ChangeNotifier {
   LocationAccuracy _accuracy = LocationAccuracy.low;
-  LatLng latLng = LatLng(0, 0);
-  LatLng latlng_lama = LatLng(0, 0);
+  LatLng latLng = LatLng(-0.0826351, 109.3596254);
+  LatLng latlng_lama = LatLng(-0.0826351, 109.3596254);
 
   MapController mapController = MapController();
   bool mapReady = false;
@@ -25,12 +25,12 @@ class PetaProvider with ChangeNotifier {
 
   Future<bool> cekIzin() async {
     var izin = await Geolocator.checkPermission();
-    if (izin != LocationPermission.always &&
-        izin != LocationPermission.whileInUse) {
+    if (izin == LocationPermission.denied ||
+        izin == LocationPermission.deniedForever) {
       izin = await Geolocator.requestPermission();
     }
-    if (izin != LocationPermission.always &&
-        izin != LocationPermission.whileInUse) {
+    if (izin == LocationPermission.denied ||
+        izin == LocationPermission.deniedForever) {
       return false;
     }
     return true;
@@ -38,9 +38,9 @@ class PetaProvider with ChangeNotifier {
 
   void turunkan_akurasi() {
     if (_accuracy == LocationAccuracy.bestForNavigation) {
-      _accuracy == LocationAccuracy.best;
+      _accuracy = LocationAccuracy.best;
     } else if (_accuracy == LocationAccuracy.best) {
-      _accuracy == LocationAccuracy.medium;
+      _accuracy = LocationAccuracy.medium;
     } else if (_accuracy == LocationAccuracy.medium) {
       _accuracy = LocationAccuracy.low;
     }
@@ -48,15 +48,15 @@ class PetaProvider with ChangeNotifier {
 
   void naikkan_akurasi() {
     if (_accuracy == LocationAccuracy.low) {
-      _accuracy == LocationAccuracy.medium;
+      _accuracy = LocationAccuracy.medium;
     } else if (_accuracy == LocationAccuracy.medium) {
-      _accuracy == LocationAccuracy.best;
+      _accuracy = LocationAccuracy.best;
     } else if (_accuracy == LocationAccuracy.best) {
       _accuracy = LocationAccuracy.bestForNavigation;
     }
   }
 
-  Future _bacalokasi() async {
+  Future<void> _bacalokasi() async {
     final izin = await cekIzin();
     if (izin == false) return;
 

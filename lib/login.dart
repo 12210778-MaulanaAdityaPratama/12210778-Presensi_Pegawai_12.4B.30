@@ -1,12 +1,13 @@
-import 'package:absensi_pegawai/presensi.dart';
+import 'package:absensi_pegawai/dashboard.dart';
+import 'package:absensi_pegawai/lupa_password.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:flutter/cupertino.dart';
 
-import 'inputbox.dart';
-
 class Login extends StatelessWidget {
+  const Login({super.key});
+
   @override
   Widget build(BuildContext context) {
     TextEditingController nipController = TextEditingController();
@@ -42,7 +43,7 @@ class Login extends StatelessWidget {
                 Navigator.push(
                     context,
                     MaterialPageRoute(
-                      builder: (context) => Presensi(),
+                      builder: (context) => const Dashboard(),
                     ));
               },
             ),
@@ -50,13 +51,29 @@ class Login extends StatelessWidget {
               height: 20.h,
             ),
             TextButton(
-                onPressed: () {},
+                onPressed: () {
+                  Navigator.push(
+                      context,
+                      MaterialPageRoute(
+                        builder: (context) => const LupaPassword(),
+                      ));
+                },
                 child: Text(
                   'Lupa Password?',
                   style: GoogleFonts.poppins(
                       fontSize: 15.sp,
                       fontWeight: FontWeight.w600,
-                      color: Color(0xffFEBB1B)),
+                      color: const Color(0xffFEBB1B)),
+                )),
+            SizedBox(width: 10),
+            InkWell(
+                onTap: () {
+                  print('Login dengan Google');
+                },
+                child: Image.asset(
+                  'assets/logogugel.png',
+                  width: 24,
+                  height: 24,
                 ))
           ],
         ),
@@ -99,7 +116,7 @@ class InputBox extends StatelessWidget {
                 hintStyle: GoogleFonts.poppins(
                     fontSize: 15.sp,
                     fontWeight: FontWeight.w500,
-                    color: Color(0xff8391A1)),
+                    color: const Color(0xff8391A1)),
                 suffixIcon: isPassword
                     ? IconButton(
                         onPressed: () {},

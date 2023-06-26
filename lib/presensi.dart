@@ -10,14 +10,14 @@ class Presensi extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Color(0xfff4f4f4),
+      backgroundColor: const Color(0xfff4f4f4),
       appBar: AppBar(
-        backgroundColor: Color(0xffFEBB1B),
+        backgroundColor: const Color(0xffFEBB1B),
         leading: IconButton(
           onPressed: () {
             Navigator.pop(context);
           },
-          icon: Icon(CupertinoIcons.back),
+          icon: const Icon(CupertinoIcons.back),
         ),
         title: Text(
           'Presensi',
@@ -61,7 +61,7 @@ class Presensi extends StatelessWidget {
                           style: GoogleFonts.roboto(
                               fontSize: 13.sp,
                               fontWeight: FontWeight.w400,
-                              color: Color(0xff6a707c)),
+                              color: const Color(0xff6a707c)),
                         ),
                         SizedBox(
                           height: 10.h,
@@ -71,7 +71,7 @@ class Presensi extends StatelessWidget {
                           style: GoogleFonts.roboto(
                               fontSize: 13.sp,
                               fontWeight: FontWeight.w400,
-                              color: Color(0xff6a707c)),
+                              color: const Color(0xff6a707c)),
                         )
                       ],
                     )
@@ -97,7 +97,7 @@ class Presensi extends StatelessWidget {
                         style: GoogleFonts.poppins(
                             fontSize: 15.sp,
                             fontWeight: FontWeight.w500,
-                            color: Color(0xfffebb1b)),
+                            color: const Color(0xfffebb1b)),
                       ),
                       Text(
                         '07.00',
@@ -117,7 +117,7 @@ class Presensi extends StatelessWidget {
                         style: GoogleFonts.poppins(
                             fontSize: 15.sp,
                             fontWeight: FontWeight.w500,
-                            color: Color(0xfffebb1b)),
+                            color: const Color(0xfffebb1b)),
                       ),
                       Text(
                         '12.00',
@@ -137,7 +137,7 @@ class Presensi extends StatelessWidget {
                         style: GoogleFonts.poppins(
                             fontSize: 15.sp,
                             fontWeight: FontWeight.w500,
-                            color: Color(0xfffebb1b)),
+                            color: const Color(0xfffebb1b)),
                       ),
                       Text(
                         '05.00',
@@ -167,10 +167,10 @@ class Presensi extends StatelessWidget {
                     style: GoogleFonts.poppins(
                         fontSize: 31.sp,
                         fontWeight: FontWeight.w500,
-                        color: Color(0xfffebb1b)),
+                        color: const Color(0xfffebb1b)),
                   ),
                   FloatingActionButton(
-                      backgroundColor: Color(0xfffebb1b),
+                      backgroundColor: const Color(0xfffebb1b),
                       onPressed: () {},
                       child: Image.asset(
                         'assets/plus.png',
@@ -183,7 +183,7 @@ class Presensi extends StatelessWidget {
               width: 319.w,
               height: 319.h,
               margin: EdgeInsets.fromLTRB(0, 20.r, 0, 0),
-              child: PetaView(),
+              child: const PetaView(),
             )
           ],
         ),

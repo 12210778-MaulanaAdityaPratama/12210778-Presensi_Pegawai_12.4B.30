@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "349286641164",
+    "project_id": "authentication-35dbe",
+    "storage_bucket": "authentication-35dbe.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:349286641164:android:84def84407f8b19edb0829",
+        "android_client_info": {
+          "package_name": "id.ac.bsi.u4b.u12210778.absensi_pegawai"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "349286641164-7hie34b1rjelveimdc5bgsjr0kirfd14.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAwAYg9sLPcbL4HQUmRdgDV2TVrUTKsL9I"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "349286641164-7hie34b1rjelveimdc5bgsjr0kirfd14.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

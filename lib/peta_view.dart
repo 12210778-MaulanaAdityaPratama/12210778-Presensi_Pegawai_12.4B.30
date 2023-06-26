@@ -25,8 +25,8 @@ class PetaView extends StatelessWidget {
             ),
             children: [
               TileLayer(
-                urlTemplate: 'https://mt.google.com/vt/lyrs=m&x={x}&y{y}&z{z}',
-              ),
+                  urlTemplate:
+                      'https://mt3.google.com/vt/lyrs=m&x={x}&y={y}&z={z}'),
               MarkerLayer(
                 markers: [
                   Marker(
